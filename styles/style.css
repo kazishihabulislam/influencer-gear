@@ -3,9 +3,9 @@
 
 
 .inder-regular {
-  font-family: "Inder", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Inder", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 
@@ -121,7 +121,9 @@
 
 
 
-
+body {
+    margin: 0px;
+}
 
 header,
 main {
@@ -132,14 +134,16 @@ main {
 .display-flex {
     display: flex;
 }
+
 .header-container,
 .hero-container,
 .our-partners,
 .popular-container,
-.featured-container{
+.featured-container {
     max-width: 1200px;
     margin: 50px auto;
 }
+
 .align-items {
     justify-content: center;
     align-items: center;
@@ -195,17 +199,16 @@ a {
     align-items: center;
     margin: 50px auto;
     padding: 50px 0px;
-    gap: 130px;
+    /* gap: 130px; */
 }
 
 /* Text Section */
-.text-container {
+/* .text-container {
     flex: 1;
     max-width: 60%;
-}
+} */
 
 .hero-title {
-    max-width: 70%;
     font-size: 52px;
     margin: 16px 0px;
 }
@@ -232,13 +235,16 @@ a {
 }
 
 /* Our Partners Section Style Start Now  */
+.our-partners {
+    padding: 80px;
+}
 
 .our-partners-container {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     justify-content: center;
     justify-items: center;
-    border-top: 1px solid gainsboro;
+    /* border-top: 1px solid gainsboro; */
 }
 
 /* Popular Collection Style Start Now */
@@ -247,12 +253,14 @@ a {
     grid-template-columns: repeat(3, 1fr);
     gap: 60px;
 }
-.popular-title{
+
+.popular-title {
     margin-bottom: 50px;
     text-align: center;
     font-size: 28px;
     color: rgb(58, 58, 58);
 }
+
 .card {
     flex-direction: column;
     padding: 15px;
@@ -270,7 +278,7 @@ a {
 }
 
 .rating-point {
-     color: rgba(128, 128, 128, 0.8);
+    color: rgba(128, 128, 128, 0.8);
 }
 
 .card-title {
@@ -282,21 +290,81 @@ a {
     font-size: 24px;
     margin: 6px 0px;
 }
-.card-description{
-     color: rgba(128, 128, 128, 0.7);
+
+.card-description {
+    color: rgba(128, 128, 128, 0.7);
+}
+
+.see-more-container {
+    justify-content: right;
+    align-items: center;
+}
+
+.btn-see-more {
+    margin-top: 30px;
+    border: none;
+    font-size: 16px;
+    color: rgba(224, 44, 109, 0.87);
+    text-align: right;
+    background-color: white;
 }
 
 /* Featured products Style Start Now */
-.featured-container{
+.featured-container {
     justify-content: center;
     align-items: center;
     gap: 80px;
+    padding-top: 80px;
 }
-.featur-title{
+
+.featur-title {
     font-size: 38px;
     margin: 5px 0px;
 }
-.featur-description{
+
+.featur-description {
     color: rgb(108, 108, 108);
 
+}
+
+/* Footer Section Style Start Now */
+.footer-container {
+    background: rgb(10, 8, 38);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    color: rgb(170, 170, 170);
+}
+
+.footer-title {
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    margin: 0px;
+}
+
+.footer-copyright-article,
+.copyright-description {
+    color: rgb(217, 219, 225);
+    margin: 5px;
+    font-size: 14px;
+}
+
+.copyright-description {
+    margin: 2px;
+}
+
+.social-container {
+    color: rgb(255, 255, 255);
+    margin: 10px;
+    display: flex;
+    gap: 20px;
+}
+.social-icon{
+    font-size: 18px;
+    color: rgb(217, 219, 225);
 }
