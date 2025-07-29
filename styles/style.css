@@ -89,6 +89,7 @@
  /* Navbar Styling Begins Here */
  .nav-container {
      justify-content: space-between;
+     padding: 0px;
  }
 
  #brand-title {
@@ -103,3 +104,72 @@
  .nav-link{
     color: rgb(58, 58, 58);
  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* Extra Small Devices (phones) */
+ @media screen and (max-width: 575.98px) {
+    .header-container{
+        margin: 0px 6px;
+    }
+    .menu-container,
+    .brand-container{
+        display: none;
+    }
+    .mobile-nav{
+        display: block;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    .mobile-nav-container{
+        padding: 0px;
+    }
+    
+ }
+
+/* Small Devices (portrait tablets and large phones) */
+/* @media (min-width: 576px) and (max-width: 767.98px) { ... } */
+
+/* Medium Devices (tablets) */
+/* @media (min-width: 768px) and (max-width: 991.98px) { ... } */
+
+/* Large Devices (desktops) */
+/* @media (min-width: 992px) and (max-width: 1199.98px) { ... } */
+
+/* Extra Large Devices (large desktops like 22-inch and up) */
+@media screen and (min-width: 992px) and (max-width: 1600px) {
+    .desktop-container{
+        display: block;
+    }
+    .mobile-container{
+        display: none;
+    }
+    
+}
