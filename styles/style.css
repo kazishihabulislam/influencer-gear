@@ -1,370 +1,105 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inder&display=swap');
+ /* Google Fonts Poppins  */
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
-.inder-regular {
-    font-family: "Inder", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+
+
+ /* Shared Styles - Reusable across multiple sections/components */
+ /* Base Poppins font family */
+ .poppins {
+     font-family: "Poppins", sans-serif;
+ }
+
+ /* Font weight modifiers */
+ .poppins.w100 {
+     font-weight: 100;
+ }
+
+ .poppins.w200 {
+     font-weight: 200;
+ }
+
+ .poppins.w300 {
+     font-weight: 300;
+ }
+
+ .poppins.w400 {
+     font-weight: 400;
+ }
+
+ .poppins.w500 {
+     font-weight: 500;
+ }
+
+ .poppins.w600 {
+     font-weight: 600;
+ }
+
+ .poppins.w700 {
+     font-weight: 700;
+ }
+
+ .poppins.w800 {
+     font-weight: 800;
+ }
+
+ .poppins.w900 {
+     font-weight: 900;
+ }
+
+ /* Italic modifier */
+ .italic {
+     font-style: italic;
+ }
+
+ .header-container {
+     max-width: calc(1200vw - 280px);
+     margin: 0px 120px;
+ }
+
+ /* Utility Flexbox Classes */
+ .flex {
+     display: flex;
+ }
+
+ .center {
+     justify-content: center;
+ }
+
+ .items {
+     align-items: center;
+ }
+
+ /* Utility class to hide elements */
+ .hidden {
+     display: none;
+ }
+
+ /* Utility: Remove default list bullets */
+.no-list {
+  list-style: none;
+}
+
+ /* Utility: Remove underline from text */
+.no-underline {
+  text-decoration: none;
 }
 
 
-.poppins-thin {
-    font-family: "Poppins", sans-serif;
-    font-weight: 100;
-    font-style: normal;
-}
+ /* Navbar Styling Begins Here */
+ .nav-container {
+     justify-content: space-between;
+ }
 
-.poppins-extralight {
-    font-family: "Poppins", sans-serif;
-    font-weight: 200;
-    font-style: normal;
-}
-
-.poppins-light {
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-}
-
-.poppins-regular {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.poppins-medium {
-    font-family: "Poppins", "Inder", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-}
-
-.poppins-semibold {
-    font-family: "Poppins", "Inder", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-}
-
-.poppins-bold {
-    font-family: "Poppins", "Inder", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-}
-
-.poppins-extrabold {
-    font-family: "Poppins", "Inder", sans-serif;
-    font-weight: 800;
-    font-style: normal;
-}
-
-.poppins-black {
-    font-family: "Poppins", "Inder", sans-serif;
-    font-weight: 900;
-    font-style: normal;
-}
-
-.poppins-thin-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 100;
-    font-style: italic;
-}
-
-.poppins-extralight-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 200;
-    font-style: italic;
-}
-
-.poppins-light-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-style: italic;
-}
-
-.poppins-regular-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: italic;
-}
-
-.poppins-medium-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-style: italic;
-}
-
-.poppins-semibold-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-style: italic;
-}
-
-.poppins-bold-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-style: italic;
-}
-
-.poppins-extrabold-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 800;
-    font-style: italic;
-}
-
-.poppins-black-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 900;
-    font-style: italic;
-}
-
-
-
-
-
-body {
-    margin: 0px;
-}
-
-header,
-main {
-    margin: 0px 120px;
-}
-
-/* Shared Style is Here */
-.display-flex {
-    display: flex;
-}
-
-.header-container,
-.hero-container,
-.our-partners,
-.popular-container,
-.featured-container {
-    max-width: 1200px;
-    margin: 50px auto;
-}
-
-.align-items {
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-}
-
-.container {
-    justify-content: space-between;
-    align-items: center;
-}
-
-/* Navbar Style Start is Here */
-.nav-container {
-    justify-content: space-between;
-    align-items: center;
-}
-
-.nav-container,
-.nav-items,
-a {
-    text-decoration: none;
-    padding: 0px;
-    list-style: none;
-}
-
-.brand-logo {
-    font-size: 24px;
-    color: rgb(58, 58, 58);
-}
-
-.nav-items a {
-    font-size: 18px;
-    color: rgb(58, 58, 58);
-}
-
-.nav-items {
-    gap: 34px;
-}
-
-.btn-primary {
-    color: rgb(255, 255, 255);
+ #brand-title {
+     font-size: 24px;
+     color: rgb(58, 58, 58);
+ }
+ .menu-container{
+    gap: 35px;
     font-size: 16px;
-    padding: 10px 24px;
-    background-color: rgb(224, 44, 109);
-    border-radius: 50px;
-    border: none;
-}
-
-/* Hero Section Style Starts Now */
-.hero-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 50px auto;
-    padding: 50px 0px;
-    /* gap: 130px; */
-}
-
-/* Text Section */
-/* .text-container {
-    flex: 1;
-    max-width: 60%;
-} */
-
-.hero-title {
-    font-size: 52px;
-    margin: 16px 0px;
-}
-
-.banner-description {
-    max-width: 70%;
-    font-size: 16px;
-}
-
-/* Image Section */
-.image-container {
-    flex: 1;
-    max-width: 40%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Camera with Background Circle */
-.main-camera {
-    background-image: url("/images/Circle\ design.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-/* Our Partners Section Style Start Now  */
-.our-partners {
-    padding: 80px;
-}
-
-.our-partners-container {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    justify-content: center;
-    justify-items: center;
-    /* border-top: 1px solid gainsboro; */
-}
-
-/* Popular Collection Style Start Now */
-.card-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 60px;
-}
-
-.popular-title {
-    margin-bottom: 50px;
-    text-align: center;
-    font-size: 28px;
+    color: rgb(59, 58, 58);
+ }
+ .nav-link{
     color: rgb(58, 58, 58);
-}
-
-.card {
-    flex-direction: column;
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
-    background: rgb(255, 255, 255);
-    margin: 0px auto;
-}
-
-.rating-container,
-.rating-point {
-    font-size: 14px;
-    /* Orange / 60 */
-    color: rgb(251, 130, 0);
-}
-
-.rating-point {
-    color: rgba(128, 128, 128, 0.8);
-}
-
-.card-title {
-    font-size: 28px;
-    margin: 16px 0px 0px 0px;
-}
-
-.card-price {
-    font-size: 24px;
-    margin: 6px 0px;
-}
-
-.card-description {
-    color: rgba(128, 128, 128, 0.7);
-}
-
-.see-more-container {
-    justify-content: right;
-    align-items: center;
-}
-
-.btn-see-more {
-    margin-top: 30px;
-    border: none;
-    font-size: 16px;
-    color: rgba(224, 44, 109, 0.87);
-    text-align: right;
-    background-color: white;
-}
-
-/* Featured products Style Start Now */
-.featured-container {
-    justify-content: center;
-    align-items: center;
-    gap: 80px;
-    padding-top: 80px;
-}
-
-.featur-title {
-    font-size: 38px;
-    margin: 5px 0px;
-}
-
-.featur-description {
-    color: rgb(108, 108, 108);
-
-}
-
-/* Footer Section Style Start Now */
-.footer-container {
-    background: rgb(10, 8, 38);
-}
-
-.footer-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 40px;
-    color: rgb(170, 170, 170);
-}
-
-.footer-title {
-    color: rgb(255, 255, 255);
-    font-size: 24px;
-    margin: 0px;
-}
-
-.footer-copyright-article,
-.copyright-description {
-    color: rgb(217, 219, 225);
-    margin: 5px;
-    font-size: 14px;
-}
-
-.copyright-description {
-    margin: 2px;
-}
-
-.social-container {
-    color: rgb(255, 255, 255);
-    margin: 10px;
-    display: flex;
-    gap: 20px;
-}
-.social-icon{
-    font-size: 18px;
-    color: rgb(217, 219, 225);
-}
+ }
