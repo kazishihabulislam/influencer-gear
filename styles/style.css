@@ -55,7 +55,19 @@
  .header-container,
  .hero-container {
      max-width: calc(1200vw - 280px);
-     margin: 0px 120px;
+ }
+
+ .header-container,
+ .hero-container {
+     margin: 16px 120px;
+ }
+
+ /* Utility: Primary button styles for main actions */
+ .btn-primary {
+     color: white;
+     border-radius: 41px;
+     background: rgb(224, 44, 109);
+     padding: 10px 24px;
  }
 
  /* Utility Flexbox Classes */
@@ -66,7 +78,9 @@
  .center {
      justify-content: center;
  }
-
+.start{
+    justify-content: start;
+}
  .items {
      align-items: center;
  }
@@ -77,14 +91,14 @@
  }
 
  /* Utility: Remove default list bullets */
-.no-list {
-  list-style: none;
-}
+ .no-list {
+     list-style: none;
+ }
 
  /* Utility: Remove underline from text */
-.no-underline {
-  text-decoration: none;
-}
+ .no-underline {
+     text-decoration: none;
+ }
 
 
  /* Navbar Styling Begins Here */
@@ -97,16 +111,44 @@
      font-size: 24px;
      color: rgb(58, 58, 58);
  }
- .menu-container{
-    gap: 35px;
-    font-size: 16px;
-    color: rgb(59, 58, 58);
+
+ .menu-container {
+     gap: 35px;
+     font-size: 16px;
+     color: rgb(59, 58, 58);
  }
- .nav-link{
-    color: rgb(58, 58, 58);
+
+ .nav-link {
+     color: rgb(58, 58, 58);
  }
 
  /* Start of Hero Section Styling */
+ .hero-container {
+     gap: 130px;
+     margin: 50px 120px;
+ }
+
+ .hero-content {
+     gap: 16px;
+ }
+
+ .hero-title {
+     font-size: 52px;
+     margin: 0px;
+ }
+
+.hero-description{
+    color: rgb(58, 58, 58);
+    font-size: 16px;
+}
+ .hero-image {
+     width: 480px;
+     height: 425;
+     background-image: url('/images//Circle\ design.svg');
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+ }
 
 
 
@@ -140,44 +182,49 @@
 
  /* Extra Small Devices (phones) */
  @media screen and (max-width: 575.98px) {
-    .header-container{
-        margin: 0px 6px;
-    }
-    .menu-container,
-    .brand-container{
-        display: none;
-    }
-    .mobile-container{
-        display: block;
-    }
-    .mobile-nav{
-        /* display: block; */
-        display: flex;
-        justify-content: space-between;
-        gap: 20px;
-    }
-    .mobile-nav-container{
-        padding: 0px;
-    }
-    
+     .header-container {
+         margin: 0px 6px;
+     }
+
+     .menu-container,
+     .brand-container {
+         display: none;
+     }
+
+     .mobile-container {
+         display: block;
+     }
+
+     .mobile-nav {
+         /* display: block; */
+         display: flex;
+         justify-content: space-between;
+         gap: 20px;
+     }
+
+     .mobile-nav-container {
+         padding: 0px;
+     }
+
  }
 
-/* Small Devices (portrait tablets and large phones) */
-/* @media (min-width: 576px) and (max-width: 767.98px) { ... } */
+ /* Small Devices (portrait tablets and large phones) */
+ /* @media (min-width: 576px) and (max-width: 767.98px) { ... } */
 
-/* Medium Devices (tablets) */
-/* @media (min-width: 768px) and (max-width: 991.98px) { ... } */
+ /* Medium Devices (tablets) */
+ /* @media (min-width: 768px) and (max-width: 991.98px) { ... } */
 
-/* Large Devices (desktops) */
-/* @media (min-width: 992px) and (max-width: 1199.98px) { ... } */
+ /* Large Devices (desktops) */
+ /* @media (min-width: 992px) and (max-width: 1199.98px) { ... } */
 
-/* Extra Large Devices (large desktops like 22-inch and up) */
-@media screen and (min-width: 992px) and (max-width: 1600px) {
-    .desktop-container{
-        display: block;
-    }
-    .mobile-container{
-        display: none;
-    }
-    
-}
+ /* Extra Large Devices (large desktops like 22-inch and up) */
+ @media screen and (min-width: 992px) and (max-width: 1600px) {
+     .desktop-container {
+         display: block;
+     }
+
+     .mobile-container {
+         display: none;
+     }
+
+ }
